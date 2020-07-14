@@ -1,4 +1,4 @@
-### ### Let's talk about Hao Hoang Tran [![HitCount](http://hits.dwyl.com/haohoangtran/haohoangtran.svg)](http://hits.dwyl.com/haohoangtran/haohoangtran)
+### Let's talk about Hao Hoang Tran [![HitCount](http://hits.dwyl.com/haohoangtran/haohoangtran.svg)](http://hits.dwyl.com/haohoangtran/haohoangtran)
 
 
 - 🔭 &nbsp;He is currently working on [ThuDo Multimedia](http://thudomultimedia.vn/)
