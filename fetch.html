@@ -5,28 +5,33 @@
     <title>Hello</title>
 </head>
 <body>
-    <script>
-      (function() {
-        function delay(time){
-          return new Promise(resolve => setTimeout(resolve, time));
-        }
-        async function fetchFile(){
-          console.log("Fetching file with no-cors...");
-          try {
-            const ms = Date.now();
-            const response= await fetch("https://link.testfile.org/15MB?ms="+ms, { mode: "no-cors" });
-            const buffer = await response.arrayBuffer();
-            console.log("Fetch request sent.",buffer.length);
-          } catch (error) {
-            console.error("Fetch error:", error);
-          }
-          await delay(10000)
+<script>
+  (function () {
+    function delay(time) {
+      return new Promise(resolve => setTimeout(resolve, time));
+    }
 
-          return fetchFile()
-        }
-        fetchFile().then();
-      })();
-    </script>
+    async function fetchFile() {
+      console.log("Fetching file with no-cors...");
+      try {
+        const ms = Date.now();
+        const response = await fetch("https://link.testfile.org/15MB?ms=" + ms, {mode: "no-cors"});
+        const buffer = await response.arrayBuffer();
+        console.log("Fetch request sent.", buffer.length);
+      } catch (error) {
+        console.error("Fetch error:", error);
+      }
+      await delay(10000)
+
+      return fetchFile()
+    }
+
+    fetchFile().then();
+    setTimeout(() => {
+      location.reload()
+    }, 5 * 60000)
+  })();
+</script>
 <div>asdhaskhfkaskfas</div>
 </body>
 </html>
